@@ -1,0 +1,155 @@
+main
+    {
+        margin-top: 50px;
+    }
+  body
+    {
+        background-color: #fff;
+    }
+
+    .categories ul
+{
+    padding: 10px;
+    margin-bottom: 0;
+}
+.categories ul li
+{
+    list-style-type: none; 
+    padding-bottom: 3.5px;
+    font-size: 10px;
+}
+.categories ul li a
+{
+    text-decoration: none;
+    color: #666666;
+    font-weight:400;
+}
+.categories
+{
+    border: 2px solid #d8d8d8;
+    border-radius: 10px;
+    background-color: white;
+   
+}
+.pub
+{
+    background-color: rgb(199, 199, 199);
+    border: 2px solid #adadad;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.pub .div1,.pub .div2
+{
+    border: 2px solid red;
+    border-radius: 10px; 
+    height: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pub .div1
+{
+    margin-bottom: 2%;
+}
+.pub .div1 h3, .pub .div2 h3
+{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+.card {
+    border:none;
+    padding: 5px 5px;
+    box-shadow: 0px;
+  }
+
+  .card::after {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .card:hover {
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    backface-visibility: hidden; 
+    will-change: transform;
+    box-shadow: 0 1rem 3rem rgba(160, 160, 160, 0.75) !important;
+  }
+
+  .card:hover::after {
+    opacity: 1;
+  }
+
+  .card:hover .btn-outline-primary{
+    color:white;
+    background:rgb(24, 119, 242);
+  }
+.card .description .coeur
+{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.coeur  a ion-icon:hover
+{
+    color: rgb(255, 0, 0);
+}
+.titre
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.titre h4
+{
+    font-size: 18px;
+}
+.titre h5, .titre h6
+{
+    font-size: 15px;
+}
+.titre h6
+{
+    font-size: 15px;
+    color: #929292;
+}
+.prix li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prix li h4
+{
+    font-size: 20px;
+    margin: 0;
+}
+.prix li a
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.prix li ion-icon
+{
+    font-size: 20px;
+    padding: 4px 4px 4px 3px;
+    color: #666666;
+    border: 2px solid rgb(246, 139, 30);
+    border-radius: 7px;
+}
+.prix li ion-icon:hover
+{
+    font-size: 20px;
+    padding: 4px;
+    color: #464646;
+    background-color: rgb(246, 139, 30);
+    border: 2px solid rgb(246, 139, 30);
+    border-radius: 7px;
+}
